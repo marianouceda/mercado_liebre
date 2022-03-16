@@ -1,0 +1,547 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 24px;
+    color: var(--gris-oscuro);
+    margin: 20px 0;
+}
+
+header{
+    background-color: var(--amarillo);
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+img {
+    width: 100%;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.top-header-top-bar p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    padding: 0 15px;
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 12px;
+    color: var(--gris-oscuro);
+    padding: 3px;
+}
+
+.search-bar div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    border-style: none;
+    line-height: 35px;
+    background-color: white;
+    outline: none;
+    color: var(--gris-oscuro);
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+}
+
+.search-bar button {
+    border-style: none;
+    line-height: 35px;
+    background-color: white;
+    color: var(--gris-oscuro);
+    width: 10%;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.copy-header {
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.burger-menu {
+    text-align: center;
+    padding: 2%;
+}
+
+.burger-menu i{
+    background-color: var(--celeste);
+    color: white;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+.main-navbar{
+    display: none;
+    padding: 0 20px 20px 20px;
+    justify-content: space-between;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.main-navbar li {
+    padding: 0 10px;
+}
+
+
+
+.last-visit,
+.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section h3 {
+    margin: 20px 0px 20px 20px;
+}
+
+/*article {
+    flex-wrap: wrap;
+    margin: auto;
+    margin: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+    color: var(--gris-oscuro);
+    justify-content: space-between;
+}*/
+
+article{
+    background-color: white;
+    margin: 10px 0px;
+}
+
+article img {
+    width: 100%;
+}
+
+.main-article{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-top: solid 1px #ebebeb;
+    width: 100%;
+    position: relative;
+    align-items: baseline;
+}
+
+.fa-truck{
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+.fa-truck:hover{
+    transform: rotate(360deg);
+}
+
+main section article h4{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}*/
+
+.price {
+    width: 30%;
+    font-size: 18px;
+    color: black;
+    align-items: center;
+}
+
+.discount {
+    width: 70%;
+    font-size: 16px;
+    color: var(--verde);
+    align-items: center;
+}
+
+.description {
+    color: var(--gris-oscuro);
+    display: none;
+    font-size: 16px;
+    transition: 
+        display, 0.5s;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 1px 20px 0px 20px;
+    color: var(--gris-oscuro);
+}
+
+footer section strong {
+    font-size: 16px;
+}
+
+footer section p {
+    padding: 0px 60px 0px 60px;
+}
+
+.icon-footer{
+    display: block;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #1259c3;
+    transition: color;
+}
+.icon-footer:hover{
+    color: #0022AA;
+}
+
+.copyright{
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    text-align: left;
+}
+
+.register-form, .login-form {
+    padding: 25px 100px;
+}
+
+.control-register-form {
+    margin-bottom: 25px;
+    display: block;
+}
+
+.control-login-form {
+    margin-bottom: 45px;
+    display: block;
+}
+
+.send-button, .reset-button {
+    background-color: var(--celeste);
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-style: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: auto;
+    transition: background-color;
+}
+.reset-button {
+    background-color: var(--gris-oscuro);
+}
+.send-button:hover{
+    background-color: #0022AA;
+}
+.reset-button:hover{
+    background-color: #0022AA;
+}
+
+.control-register-form input, .control-login-form input, .pass {
+    width: 100%;
+    border-style: none;
+    padding: 10px 0;
+    background-color: white;
+    color: var(--gris-oscuro);
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.control-choise{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.control-choise input, .control-choise label {
+    margin: 0 15px 15px 0;
+}
+
+
+/*.control-register-form h4, .control-login-form h4 {
+    margin-bottom: 5px;
+}*/
+
+.error-message {
+    display: none;
+    color: red;
+    position: relative;
+}
+
+input:invalid + span.error-message
+{
+    display: flex;
+    position: absolute;
+}
+
+@media (min-width: 361px){
+    .logo{
+        max-height: 45px;
+    }
+    .description {
+        display: flex;
+        opacity: 0;
+        transition: opacity, 0.5s;
+    }
+    .description:hover {
+        opacity: 1;
+    }
+    .product {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100, 0);
+        width: 45%;
+        transition: box-shadow, 0.5s;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100, 1);
+    }
+    .fa-truck{
+        bottom: 35px;
+    }
+    .price,
+    .discount{
+        width: 50%;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+    }
+}
+
+/*@media (min-width: 481px){
+
+    .product-list section {
+        display: flex;
+    }
+
+
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+}*/
+
+@media (min-width: 769px){
+    article{
+        width: 22%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .search-bar {
+        width: 45%;
+    }
+    .copy-header{
+        width: 35%;
+        justify-content: right;
+        padding-inline-end: 10px;
+        font-size: 16px;
+    }
+
+    /*.main-header-top-bar {
+        max-width: max-content;
+    }*/
+    .copy-header{
+        margin-top: 0px;
+        align-items: center;
+    }/*
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 16px;
+    }*/
+
+    .left-navbar,
+    .right-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .footer-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .credit,
+    .gift,
+    .security {
+        width: 33%;
+    }
+}
+
+
+
+/*------------------ICONOS----------------------------
+
+Facebook
+redondo <i class="fa-brands fa-facebook"></i>
+cuadrado <i class="fa-brands fa-facebook-square"></i>
+
+Instagram
+cuadrado <i class="fa-brands fa-instagram"></i>
+
+Whatsapp
+redondo sin fondo <i class="fa-brands fa-whatsapp"></i>
+
+Mi Cuenta
+<i class="fa-solid fa-user"></i>
+
+Carrito de compras
+<i class="fa-solid fa-cart-shopping"></i>
+
+Tacho de basura
+<i class="fa-solid fa-trash"></i>
+
+Cruz
+<i class="fa-solid fa-circle-xmark"></i>
+
+Lupa
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Menú hamburguesa
+<i class="fa-solid fa-bars"></i>
+
+$
+<i class="fa-solid fa-circle-dollar"></i>
+
+Tarjeta de crédito
+<i class="fa-solid fa-credit-card"></i>
+
+Ayuda
+<i class="fa-solid fa-comments"></i>
+
+Email
+<i class="fa-solid fa-envelope"></i>
+
+Seguridad
+<i class="fa-solid fa-user-shield"></i>
+
+Más
+<i class="fa-solid fa-plus"></i>
+circulo <i class="fa-solid fa-circle-plus"></i>
+
+Menos
+<i class="fa-solid fa-minus"></i>
+circulo <i class="fa-solid fa-circle-minus"></i>
+
+
+
+
+
+ID
+<i class="fa-solid fa-id-card"></i>
+
+
+
+
+
+Gift
+<i class="fa-solid fa-gift"></i>
+*/
+
+
